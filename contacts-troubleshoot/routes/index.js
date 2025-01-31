@@ -17,7 +17,7 @@ function get_contacts(res)
   })
 }
 
-/* GET home page. */
+
 router.get('/', function(req, res) {
   // Checking if the contacts table exists
   pgconn.query("SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'contacts')",
